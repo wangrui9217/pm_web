@@ -1,0 +1,79 @@
+@import "common/variable.less";
+@import "common/global.less";
+@import "common/mixins.less";
+
+.data-filter {
+  .flexCtn();
+
+  .el-input__inner {
+    line-height: 28px;
+    height: 28px;
+  }
+
+  .title-and-filter {
+    overflow: hidden;
+  }
+
+  .filter-list {
+    float: left;
+    margin-right: 5px;
+
+    form {
+      overflow: hidden;
+    }
+
+    .filter-item {
+      // max-width: 320px;
+      display: inline-block;
+      padding-right: 20px;
+      margin-bottom: 15px;
+      float: left;
+      .el-input {
+        width: 200px;
+      }
+      .el-select .el-input {
+        width: 180px;
+      }
+      .el-input__icon {
+        line-height: 32px;
+      }
+    }
+  }
+
+  .filter-item {
+    .item-content {
+
+      // .flex(1);
+      .el-input__inner {
+        height: 32px;
+        line-height: 32px;
+        padding-left: 10px;
+        color: #D6DBE6;
+        border-radius: 4px;
+        background: #FFFFFF;
+        border: 1px solid #D6DBE6;
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        letter-spacing: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .btn-doFilter {
+    padding: 0px 17px;
+    height: 32px;
+    line-height: 32px;
+    background: #1890FF;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+    span {
+      font-family: MicrosoftYaHei;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 14px;
+    }
+  }
+}

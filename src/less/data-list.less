@@ -1,0 +1,125 @@
+@import "common/variable.less";
+@import "common/global.less";
+@import "common/mixins.less";
+.data-list-common{
+   // padding: 24px 24px 48px;
+   padding: 0;
+    //background: #f00;
+    /*筛选框加领取任务*/
+.tool-filter-receive{
+    padding:0 24px;
+    background: #fff;
+    .tool-filter{
+      float: left;
+      min-height:32px;
+    }
+    .tool-receive{
+      float: right;
+      height:32px;
+      .tool-receive-btn{
+        background: #1890FF;
+        border-radius: 4px;
+        width:90px;
+        height:32px;
+        line-height:32px;
+        padding:0;
+        text-align: center;
+        span{
+          font-family: MicrosoftYaHei;
+          font-size: 14px;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          line-height: 14px;
+        }
+      }
+    }
+    .tool-receive-cont{
+      clear: both;
+      padding:0 0 16px;
+      .tool-receive-cont-info{
+        height:40px;
+        background: #E6F7FF;
+        border: 1px solid #BAE7FF;
+        border-radius: 4px;
+        padding:0px 16px;
+        h3{
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: rgba(0,0,0,0.65);
+            letter-spacing: 0;
+            line-height: 22px;
+            padding:9px 4px;
+            span{
+                color: #1890FF;
+            }
+        }
+      }
+    }
+    .tool-add-product{
+        float: right;
+        height:32px;
+        .tool-disable,.tool-able{
+            border-radius: 4px;
+            width:90px;
+            height:32px;
+            line-height:32px;
+            padding:0;
+            text-align: center;
+        }
+        .tool-add{
+            background: #1890FF;
+            border-radius: 4px;
+            width:90px;
+            height:32px;
+            line-height:32px;
+            padding:0;
+            text-align: center;
+        }
+    }
+  }
+    .title-and-filter{
+        overflow:hidden;
+        float:right;
+        height: 66px;
+        line-height: 66px;
+        >*{
+            //margin-bottom:12px;
+        }
+    }
+    .l-title{
+        float: left;
+        margin:0;
+    }
+    .data-filter{
+        //float: right;
+    }
+    .act-list{
+        margin-bottom: 5px;
+        .el-button--mini{
+            padding: 5px 15px;
+        }
+    }
+    .taks-tool-bar{
+        float:left;
+        height:66px;
+        line-height:66px;
+        >span{
+            font-size: 14px;
+            color: #99A3B0;
+            letter-spacing: 0;
+            line-height: 14px;
+            >strong{
+                color:#000000;
+            }
+        }
+        .el-button--mini {
+            font-size: 14px;
+            line-height: 14px;
+            padding:10px 16px;
+            margin:0 20px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            border-radius: 4px;
+        }
+    }
+}

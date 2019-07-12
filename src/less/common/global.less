@@ -1,0 +1,180 @@
+@import "variable.less";
+@import "mixins.less";
+
+@font-base-color:#383838;
+.wid-max{
+	width:100%;
+}
+.of-hidden{
+	overflow:hidden;
+}
+.clearfix{
+	&:after{
+		clear:both;
+		content:"";
+		display:block;
+	}
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.no-wrap{
+	white-space:no-wrap;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+i{
+	font-style: normal;
+}
+dd{
+	margin:0;
+}
+#app {
+	height: 100%;
+}
+body {
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;
+	/*font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;*/
+	overflow: auto;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+	color:@font-base-color;
+}
+a {
+	color: #4078c0;
+	text-decoration: none;
+}
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+}
+.flex1{
+	.flex(1)
+}
+.flex2{
+	.flex(2)
+}
+.flexCtn{
+	.flexCtn();
+}
+.t-right{
+	text-align:right;
+}
+.mr-size-a{
+	margin-right:10px;
+}
+.mr-size-b{
+	margin-right:20px;
+}
+.mr-size-h{
+	margin-right:80px;
+}
+.mb-size-a{
+	margin-bottom:10px;
+}
+.mt-size-a{
+	margin-top:10px;
+}
+.mb-size-b{
+	margin-bottom:20px;
+}
+.mt-size-b{
+	margin-top:20px;
+}
+.mt-size-c{
+	margin-top:30px;
+}
+.pr-size-a{
+	padding-right:40px;
+}
+.pr-size-d{
+	padding-right:40px;
+}
+.padding-h3{
+	padding-left:30px;
+	padding-right:30px;
+}
+.w100{
+	width:100px;
+}
+.is-danger{
+	border-color:#f56c6c;
+}
+.is-danger-input{
+	.el-textarea__inner,
+	.el-input__inner{
+		border-color:#f56c6c;
+	}
+}
+.lable-required{
+	&:before{
+		content: "*";
+    color: #f56c6c;
+    margin-right: 4px;
+	}
+}
+.line-height-a{
+	line-height:32px;
+}
+.tb-noborder{
+	.el-date-editor.el-input{
+		width:100%;
+	}
+	td{
+		padding:10px;
+	}
+	.pr-0{
+		padding-right:0
+	}
+}
+.radio-label-none{
+	.el-radio__label{
+		display:none;
+	}
+}
+.textBg{
+	background:@commonTextBg;
+}
+.t-left{
+	text-align:left;
+}
+.t-top{
+	vertical-align:top;
+}
+.notice-color{
+	color:@noticeColor;
+}
+.pr-0{
+	padding-right:0
+}
+.hide{
+	display:none;
+}
+.common-input{
+	width:auto;
+}
+.hover-hand{
+	cursor:pointer;
+}
+.bold{
+	font-weight:bold;
+}
+
+sup{
+    color: #ff4949;
+    margin-right: 4px;
+}
