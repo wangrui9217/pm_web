@@ -17,7 +17,7 @@
     "prod": "cross-env NODE_ENV=production node bin/www"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-plugin-component": "^1.1.1",
     "babel-polyfill": "^6.26.0",
     "blueimp-md5": "^2.10.0",
